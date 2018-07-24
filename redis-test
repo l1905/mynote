@@ -1,0 +1,27 @@
+redis性能压测流程整理：
+
+约束条件：
+    1. KEY值大小， 比如线上正常key 200字节
+    2. 压测读写模型， 仅压R， 仅压W, 或者 R/W
+    3. 指定KEY压测， redis-cluster, codis对应不同槽位slot， 观察打到不同slot，相同slot数据
+    4. 长短连接，(为更好模拟请求， 建议使用短连接)
+    5. 是否可以pipeline(是否开启性能差距比较大)
+
+Coids约束：
+    cpu性能影响代理机
+    硬盘影响 持久化
+
+压测方式：
+    1. 首选redis官方自带工具
+        特点： 命令简单，上手简单， 参数比较多， 方便看效果
+        命令demo: redis-benchmark -t set -d 200 -n 100000 -r 100000 -c 1000  -h 10.10.10.10  -p 6379
+        参考脚本：https://gist.github.com/l1905/e890c74b4de277cf3756bf31f080829c
+    2. 使用PHP脚本 + ab工具
+        PHP脚本：for循环多次， 一次请求可以执行多次redis命令， 需要注意一点是循环max-num不能太大
+        php记录
+        https://gist.github.com/l1905/e0cf9a62fbcde9a2322b89a661dd3362
+
+
+观察性能工具(查看cpu 内存指标)
+    top
+    vmstat 1  
