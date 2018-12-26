@@ -28,3 +28,5 @@
 https://apereo.atlassian.net/wiki/spaces/CASC/pages/103252665/phpCAS+examples#phpCASexamples-Onlycheckauthentication(gateway)  
 
 php类库
+
+https://apereo.atlassian.net/wiki/spaces/CASC/pages/103252665/phpCAS+examples#phpCASexamples-Onlycheckauthentication(gateway)
