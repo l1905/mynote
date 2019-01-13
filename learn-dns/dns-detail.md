@@ -800,6 +800,24 @@ bind9我们新增加 forwarder, 如果域名解析服务器没有命中， 我�
 对dns加深理解。
 
 
+#### 参考
+
+0. ftp://ftp.isc.org/isc/bind/9.6-ESV-R5/doc/arm/Bv9ARM.ch06.html
+
+1. https://zhuanlan.zhihu.com/p/31568450
+
+2. https://deepzz.com/post/dns-recording-type.html
+
+
+4. https://www.jianshu.com/p/37a5df5ba474
+
+5. https://ephen.me/2016/dns-rr/
+
+6. https://klionsec.github.io/2017/12/11/Dns-tips/
+
+7. https://wiki.archlinux.org/index.php/BIND_(简体中文)
+8. https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-caching-or-forwarding-dns-server-on-ubuntu-14-04
+9. http://wiki.ubuntu.org.cn/Bind9%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE%E6%8C%87%E5%8D%97
 
 
 
