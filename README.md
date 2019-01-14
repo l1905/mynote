@@ -8,4 +8,4 @@
 3. [svn项目迁移gitlab](https://github.com/l1905/mynote/blob/master/move_svn2git.md)
 4. [单点登录cas理解](cas/cas单点登录%20client端核心理解.md)
 5. [jwt-token理解](jwt-token.md)
-6. [dns概念理解](learn-dns/dns-detail.md)
+6. [dns深入理解](learn-dns/dns-detail.md)
