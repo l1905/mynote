@@ -95,12 +95,12 @@ nameserver 192.168.50.1 # 这里即是本地指定的dns服务器，开发环境
 #### 递归查询理解
  
  客户端 请求本地nameserver是递归方式， 如下展示
- ![图1](other/dns-02.jpg)
+ ![图1](other/dns-03.jpg)
  
  
  nameserver请求根服务器，一般是迭代方式， 如图：
  
- ![图1](other/dns-03.jpg)
+ ![图1](other/dns-02.jpg)
  
  
  根服务器IP(hint zone file)一般内置在跟服务器中
