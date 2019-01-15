@@ -170,6 +170,166 @@ minimum-stability默认是stable, 会忽略 dev, alpha, beta, rc等版本， 这
 
 
 
+### 验证流程
+
+1. 新建composer.json, 记录项目描述信息：
+
+```
+{
+  "name": "litong/composer_demo",
+  "description": "测试实践composer",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "litong",
+      "email": "litonglitong@hotmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "litong\\composer_demo\\": "src"
+    }
+  }
+}
+```
+
+
+
+这里确认是library类型
+
+
+
+
+
+2.  在目录中执行`composer install`命令, 初始化环境
+
+```
+➜  composer-demo git:(master) ✗ composer install
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Nothing to install or update
+Generating autoload files
+```
+
+
+
+composer update --no-dev生产环境运行， 不加载require-dev包， 比如以下情况
+
+
+
+```
+"require-dev": {
+		"phpunit/phpunit": "^7.0"
+	},
+```
+
+
+
+ 新建src目录，用来存在源代码
+
+新建tests目录， 用来存放单测相关数据
+
+
+
+然后我们提交到github上， 并且打上标签 
+
+https://github.com/l1905/composer_demo
+
+
+
+去packagist.org 将 我们的项目提交到仓库， 
+
+https://packagist.org/packages/litong/composer_demo
+
+
+
+我们可以新建一个项目， require进我们新建的php类库 litong/composer-demo
+
+新建github仓库 github.com/l1905/php_import_composer, 并且新建如下composer.json
+
+```
+{
+    "require": {
+        "litong/composer_demo": "~0.1"
+    },
+    "require-dev": {
+    },
+    "repositories": [
+        
+        {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    ]
+}
+```
+
+
+
+对应目录中进行安装操作
+
+
+
+`composer install `
+
+
+
+然后我们就能从vendor目录中看到我们自己的类库litong/composer-demo
+
+
+
+1. compser-demo新增函数， 发布新版本 0.1.2版本
+
+
+
+我们 在 php_import_composer 项目中 composer update 查看是否更新到最新版本, 版本成功更新
+
+
+
+这里需要注意，有缓存， 需要去packagist.org 刷新， 使得仓库主动收录新版本
+
+
+
+2. composer-demo 发布 1.1.2版本， 查看是否更新成功
+
+
+
+我们 在 php_import_composer 项目中 composer update， 并没有获取到1.1.2版本，因为我们composer.json中 限定是 ～0.1， 现在我们修改为~1.1
+
+
+
+然后再查看下结果， 能成功命中我们希望获取的
+
+
+
+
+
+测试项目地址： 
+
+
+
+ 测试项目
+
+https://github.com/l1905/php_import_composer
+
+php类库
+
+https://github.com/l1905/composer_demo
+
+
+
+
+
+
+
+
+
+
+
 
 
 
