@@ -167,6 +167,7 @@ minimum-stability默认是stable, 会忽略 dev, alpha, beta, rc等版本， 这
 1. https://laravel-china.org/index.php/docs/composer/2018/versions/2098
 2. 语义约定：https://semver.org/lang/zh-CN/
 3. composer官网： https://getcomposer.org/doc/articles/versions.md#tilde-version-range-
+4. https://jenssegers.com/68/tilde-and-caret-version-constraints-in-composer
 
 
 
@@ -319,6 +320,8 @@ https://github.com/l1905/php_import_composer
 php类库
 
 https://github.com/l1905/composer_demo
+
+
 
 
 
