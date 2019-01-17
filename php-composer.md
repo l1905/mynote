@@ -307,6 +307,8 @@ https://packagist.org/packages/litong/composer_demo
 
 
 
+Composer 会自动去掉标签名称中的 'v' 前缀来得到一个最终可用的版本号。
+
 
 
 测试项目地址： 
