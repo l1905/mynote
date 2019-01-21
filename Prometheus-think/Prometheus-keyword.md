@@ -12,7 +12,7 @@
 
 
 
-![image-20190121150913372](/Users/litong/Documents/markdown/Prometheus-think/assets/image-20190121150913372.png)
+![image-20190121150913372](assets/image-20190121150913372.png)
 
 
 
@@ -32,7 +32,7 @@
 
 #### 关键点0, 存储结构
 
-![image-20190121150937264](/Users/litong/Documents/markdown/Prometheus-think/assets/image-20190121150937264.png)
+![image-20190121150937264](assets/image-20190121150937264.png)
 
 Prometheus与其他主流时序数据库一样，在数据模型定义上，也会包含metric name、一个或多个labels（同tags）以及metric value。metric name加一组labels作为唯一标识，来定义time series，也就是时间线。在查询时，支持根据labels条件查找time series，支持简单的条件也支持复杂的条件。存储引擎的设计，会根据时序数据的特点，重点考虑数据存储（写多读少）、数据回收（retention）以及数据查询，Prometheus这里暂时还没提数据分析。
 
@@ -156,7 +156,7 @@ vector1 <operator> vector2
 
 对于Prometheus这一类基于Pull模式的监控系统，显然也无法继续使用的static_configs的方式静态的定义监控目标。而对于Prometheus而言其解决方案就是引入一个中间的代理人（服务注册中心SD(service discovery），这个代理人掌握着当前所有监控目标的访问信息，Prometheus只需要向这个代理人询问有哪些监控目标控即可， 这种模式被称为服务发现。如图, 
 
-![img](/Users/litong/Documents/markdown/Prometheus-think/assets/prometheus-sd.png)
+![img](assets/prometheus-sd.png)
 
 在Kubernetes这类容器管理平台中，Kubernetes掌握并管理着所有的容器以及服务信息，那此时Prometheus只需要与Kubernetes打交道就可以找到所有需要监控的容器以及服务对象。
 
