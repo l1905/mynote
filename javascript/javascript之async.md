@@ -341,3 +341,9 @@ await不消耗cpu资源， 是一种等待操作， 可以让出cpu
 
  
 
+#### 参考文章
+
+1. https://javascript.info/async
+2.  https://developers.google.com/web/fundamentals/primers/promises
+3. https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
+4.  https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions
