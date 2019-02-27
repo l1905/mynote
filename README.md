@@ -18,3 +18,4 @@
 13. [es之mapping中fields翻译+理解](es/Elasticsearch-fields.md)
 14. [php-Elasticsearch类库源码分析记录](es/php-es-libnary-source-code.md)
 15. [git-submodule应用](git-submodule-use.md)
+16. [记录一次线上Mysql慢查询](mysql-slow-query.md)
