@@ -27,7 +27,7 @@ CREATE TABLE test_table (
 select * from test_table;
 ```
 
-![image-20190327224730749](/Users/litong/Documents/markdown/mysql_string_cmp/image-all.png)
+![image-20190327224730749](assets/image-all.png)
 
 2. 在内存中排序。
 
@@ -65,7 +65,7 @@ select * from test_table where '0009.0002.1111' >= start_version  and '0009.0002
 
 数据表内容如下：
 
-![image-20190327230026038](/Users/litong/Documents/markdown/mysql_string_cmp/update.png)
+![image-20190327230026038](assets/update.png)
 
 
 
@@ -88,7 +88,7 @@ select inet_aton('192.168.1.1')
 
 
 
-![image-20190327230644909](/Users/litong/Documents/markdown/mysql_string_cmp/image-string-ip.png)
+![image-20190327230644909](assets/image-string-ip.png)
 
 
 
