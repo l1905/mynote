@@ -19,3 +19,4 @@
 14. [php-Elasticsearch类库源码分析记录](es/php-es-libnary-source-code.md)
 15. [git-submodule应用](git-submodule-use.md)
 16. [记录一次线上Mysql慢查询](mysql-slow-query.md)
+17. [Mysql字符串比较](mysql_string_cmp/mysql_string_cmp.md)
