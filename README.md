@@ -20,3 +20,4 @@
 15. [git-submodule应用](git-submodule-use.md)
 16. [记录一次线上Mysql慢查询](mysql-slow-query.md)
 17. [Mysql字符串比较](mysql_string_cmp/mysql_string_cmp.md)
+18. [Redis关注业务优化](redis-user-follow.md)
