@@ -425,6 +425,7 @@ public function user_id_bucket_by_max_creation_date($param = [])
 3. https://elasticsearch.cn/article/629
 
 4. https://stackoverflow.com/questions/46908360/sql-like-group-by-and-having
+5. http://cwiki.apachecn.org/pages/viewpage.action?pageId=10030397
 
 
 
