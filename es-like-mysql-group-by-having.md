@@ -28,7 +28,7 @@ SELECT user_id FROM comment_data WHERE user_id>? and `status`=1 GROUP BY user_id
 
 
 
-### 步骤1. 使用query完成
+### 步骤1. 使用query完成条件过滤
 
 对应PHP代码实现为：
 
@@ -44,7 +44,7 @@ $boolQuery->add(
 $search->addQuery($boolQuery);
 ```
 
-### 步骤2: 指定field分桶
+### 步骤2: 指定field分桶进行聚合操作
 
 我们选择使用 `Terms Aggregation`桶，指定`field`为`user_id`
 
@@ -86,7 +86,7 @@ $aggregation_term->addAggregation($agg_bucket_selector);
 
 #### 方案02
 
-我们发现 `Terms Aggregation`聚合实现中，支持`min_doc_count`, 选择最小匹配文档总数， 正好契合我们`having count(1) >1` 操作。
+我们发现 `Terms Aggregation`聚合实现中，支持`min_doc_count`, 选择最小匹配文档总数， 正好契合我们`having count(1) >1` 操作。但是不支持`max_doc_count`操作，无法完成`having count(1) < 3`类似操作
 
 对应的PHP实现为
 
@@ -106,12 +106,12 @@ $aggregation_term->addParameter('order', ['_term' => 'asc']);
 ### 步骤5: 对返回桶个数进行限制
 
 ```
-$aggregation_term->addParameter('size', 10);
+$aggregation_term->addParameter('size', 10); #必须设置， 如果不设置，则默认为10，
 ```
 
 筛选桶如果选方案1， 则执行顺序为
 
-步骤1---->步骤2 ---->步骤4 ----->步骤3(方案1)
+步骤1---->步骤2 ---->步骤4 ---->步骤5 ----->步骤3(方案1)
 
 我们的PHP完整实现为
 
@@ -137,6 +137,9 @@ $aggregation_term->addAggregation($agg_bucket_selector);
 
 //设置排序
 $aggregation_term->addParameter('order', ['_count' => 'desc']);
+
+//设置返回总数
+$aggregation_term->addParameter('size', 10);
 
 //设置过滤条件
 $search->addAggregation($aggregation_term);
@@ -188,7 +191,8 @@ exit(json_encode($result, JSON_PRETTY_PRINT));
                     "field": "user_info.user_id",
                     "order": {
                         "_count": "desc"
-                    }
+                    },
+                    "size": 10
                 },
                 "aggregations": {
                     "selector_count": {
