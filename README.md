@@ -24,3 +24,4 @@
 19. [MongoDB日志归档](MongoDB-tips-archives.md)
 20. [ES实现类似MYSQL GROUP BY HAVING 操作](es-like-mysql-group-by-having.md)
 21. [Redis主动过期线上问题追踪](redis-active-expire.md)
+22. [es之refresh刷新缓存追踪](es-refresh-record.md)
