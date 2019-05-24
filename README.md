@@ -25,3 +25,6 @@
 20. [ES实现类似MYSQL GROUP BY HAVING 操作](es-like-mysql-group-by-having.md)
 21. [Redis主动过期线上问题追踪](redis-active-expire.md)
 22. [es之refresh刷新缓存追踪](es-refresh-record.md)
+23. [k8s源数据在etcd中存储结构](word/git-learn-用户git开发流程总结.doc)
+24. [项目git开发流程总结](word/k8s源数据在etcd中存储结构.docx)
+
