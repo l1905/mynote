@@ -27,4 +27,7 @@
 22. [es之refresh刷新缓存追踪](es-refresh-record.md)
 23. [k8s源数据在etcd中存储结构](word/git-learn-用户git开发流程总结.doc)
 24. [项目git开发流程总结](word/k8s源数据在etcd中存储结构.docx)
-
+25. [gitlab-runner安装总结](gitlab-runner.md)
+26. [gitlab-pipeline总结使用](gitlab-pipeline.md)
+27. [持续集成概述(公司分享)](CI-chixujicheng.md)
+28. [分析B泄漏源码系列](bi/)
