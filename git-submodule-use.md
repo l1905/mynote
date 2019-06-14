@@ -127,6 +127,13 @@ after_success:
 
 ```
 
+线上更新脚本 增加如下如下命令：
+
+```
+/usr/local/bin/git submodule init
+/usr/local/bin/git submodule update
+```
+
 ### 其他
 
 1. travis 需要去官网授权访问仓库代码
