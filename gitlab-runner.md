@@ -1,7 +1,7 @@
-##搭建gitlab CI工具runner
+## 搭建gitlab CI工具runner
 
-####1. 安装runner(运维操作)
-#####1.1. 下载runner工具
+#### 1. 安装runner(运维操作)
+##### 1.1. 下载runner工具
 
 核心点，版本需要跟gitlab匹配， 否则会提示 404 not found
 
