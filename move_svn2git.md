@@ -15,7 +15,7 @@ sudo gem install svn2git
 
 如果比较慢， 需要替换gem源为国内ruby-china， 替换教程 ：https://gems.ruby-china.com/
 
-####2. svn需要手动从test分支 新切分支到branches/test， 因为迁移脚本只会迁移 branches, trunk两个目录， 其他均忽略
+#### 2. svn需要手动从test分支 新切分支到branches/test， 因为迁移脚本只会迁移 branches, trunk两个目录， 其他均忽略
 
 主要是自己项目目录单独维护一份test分支，需要对此分支进行迁移
 
@@ -58,7 +58,7 @@ svn2git https://svn.team.bq.com/www/src/ --authors ../authors.txt
 
 
 {https://svn.team.bq.com/www/src/} 需要替换为自己对应的svn项目
-####4. 验证是否迁移成功
+#### 4. 验证是否迁移成功
 
 git的master分支对应svn项目的trunk分支
 git中的其他分支对应svn项目branches目录中的其他分支
