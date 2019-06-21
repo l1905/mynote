@@ -32,3 +32,4 @@
 27. [持续集成概述(公司分享)](CI-chixujicheng.md)
 28. [分析B泄漏源码系列](bi/)
 29. [golang-module使用开发总结](https://github.com/l1905/golang_module_demo/blob/master/golang_module_first.md)
+30. [带宽知识点(小白篇）](https://github.com/l1905/mynote/blob/master/bandwith-little.md)
