@@ -34,3 +34,4 @@
 29. [golang-module使用开发总结](https://github.com/l1905/golang_module_demo/blob/master/golang_module_first.md)
 30. [带宽知识点(小白篇）](https://github.com/l1905/mynote/blob/master/bandwith-little.md)
 31. [二维码扫码登录逻辑设计梳理](https://github.com/l1905/mynote/blob/master/qrcode_login_design.md)
+32. [golang指针简单理解](https://github.com/l1905/mynote/blob/master/simple-golang-pointer.md)
