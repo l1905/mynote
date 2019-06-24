@@ -29,6 +29,7 @@ Signature === encryptionFunction(Payload, secret)
 
 ### 核心关键点：
 
+
 1. secret 不能泄漏， 不能写在代码层面中， 只能线上数据库存一分,否则对外公开拿到加密算法
 
 2. 无状态， 无法强制token退出， payload中有效时间字段，可以设置短一些，比如30分钟，可以有效减少盗用
@@ -42,6 +43,8 @@ Signature === encryptionFunction(Payload, secret)
 
 
 ### 参考链接:
+
+https://jwt.io/#debugger
 
 https://zhuanlan.zhihu.com/p/27370773
 
