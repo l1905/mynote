@@ -35,3 +35,5 @@
 30. [带宽知识点(小白篇）](https://github.com/l1905/mynote/blob/master/bandwith-little.md)
 31. [二维码扫码登录逻辑设计梳理](https://github.com/l1905/mynote/blob/master/qrcode_login_design.md)
 32. [golang指针简单理解](https://github.com/l1905/mynote/blob/master/simple-golang-pointer.md)
+33. [wordpress钩子理解](https://github.com/l1905/mynote/blob/master/wp_hook.md)
+34. [斐讯n1折腾流水记录](https://github.com/l1905/mynote/blob/master/feixun_n1_first.md)
