@@ -37,3 +37,4 @@
 32. [golang指针简单理解](https://github.com/l1905/mynote/blob/master/simple-golang-pointer.md)
 33. [wordpress钩子理解](https://github.com/l1905/mynote/blob/master/wp_hook.md)
 34. [斐讯n1折腾流水记录](https://github.com/l1905/mynote/blob/master/feixun_n1_first.md)
+35. [字体加载理解](https://github.com/l1905/mynote/blob/master/font-family_question.md)
